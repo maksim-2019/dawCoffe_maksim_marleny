@@ -37,8 +37,25 @@ public enum Productos {
         this.dep = dep;
     }
 
-    
-    
-        
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public int getCafe() {
+        return cafe;
+    }
+
+    public int getDep() {
+        return dep;
+    }
+
     
 }
