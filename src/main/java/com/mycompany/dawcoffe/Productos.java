@@ -11,18 +11,24 @@ package com.mycompany.dawcoffe;
  */
 public enum Productos {
     
-    CAFE_SOLO ("Cafe solo" , 0.80),
-    CAFE_SOLO_DESCAFEINADO ("Cafe solo descafeinado" , 0.80),
-    CAFE_LARGO ("Cafe largo" , 0.90),
-    CAFE_LARGO_DESCAFEINADO ("Cafe largo descafeinado" , 0.90),
-    CAFE_CON_LECHE("Cafe con leche", 1),
-    CAFE_CON_LECHE_DESCAFEINADO("Cafe con leche", 1),
-    CAFE_CORTADO("Cafe cortado", 1),
-    CAFE_CORTADO_DESCAFEINADO("Cafe cortado", 1);
+    CAFE_SOLO (200, "Cafe solo" , 0.80),
+    CAFE_SOLO_DESCAFEINADO (201, "Cafe solo descafeinado" , 0.80),
+    CAFE_LARGO (202, "Cafe largo" , 0.90),
+    CAFE_LARGO_DESCAFEINADO (203, "Cafe largo descafeinado" , 0.90),
+    CAFE_CON_LECHE(204, "Cafe con leche", 1),
+    CAFE_CON_LECHE_DESCAFEINADO(205, "Cafe con leche", 1),
+    CAFE_CORTADO(206, "Cafe cortado", 1),
+    CAFE_CORTADO_DESCAFEINADO(207, "Cafe cortado", 1),
+    CHOCOLATE(207, "Chocolate", 1.4),
+    LECHE_FRIA(208, "Leche fria", 0.50),
+    LECHE_CALIENTE(209, "Leche caliente", 0.50);
+    
+    private int codigo;
     private String nombre;
     private double precio;
 
-    private Productos(String nombre, double precio) {
+    private Productos(int codigo, String nombre, double precio) {
+        this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
     }
