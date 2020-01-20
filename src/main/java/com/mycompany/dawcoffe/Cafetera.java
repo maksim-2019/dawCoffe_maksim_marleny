@@ -12,7 +12,7 @@ package com.mycompany.dawcoffe;
 public class Cafetera {
     public double saldo;
     public double saldoAcumulado;
-    public double ventasR;
+    public double ventasRealizadas;
     
     
 }
