@@ -9,6 +9,10 @@ package com.mycompany.dawcoffe;
  *
  * @author maksim
  */
-public class cafetera {
+public class Cafetera {
+    public double saldo;
+    public double saldoAcumulado;
+    public double ventasR;
+    
     
 }
