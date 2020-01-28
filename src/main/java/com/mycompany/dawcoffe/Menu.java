@@ -23,6 +23,15 @@ public class Menu {
         System.out.println("3. Salir");
         this.resp = teclado.nextInt();
     }
+    
+    public void MenuAdministracion(){
+        System.out.println("1. Comprobar Depositos.");
+        System.out.println("2. Estado de Depositos.");
+        System.out.println("3. Rellenar deposito.");
+        System.out.println("4. Consultar Ventas.");
+        System.out.println("5. Salir");
+        resp = teclado.nextInt();
+    }
 
     public int getResp() {
         return resp;
