@@ -10,9 +10,26 @@ package com.mycompany.dawcoffe;
  * @author maksim
  */
 public class Cafetera {
-    public double saldo;
-    public double saldoAcumulado;
-    public double ventasRealizadas;
-    
-    
+
+    private double saldo;
+    private double saldoAcumulado;
+    private double ventasRealizadas;
+
+    Deposito cafe = new Deposito("Cafe", 1000);
+    Deposito agua = new Deposito("Agua", 1000);
+    Deposito leche = new Deposito("Leche", 1000);
+    Deposito chocolate = new Deposito("Chocolate", 1000);
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public double getSaldoAcumulado() {
+        return saldoAcumulado;
+    }
+
+    public double getVentasRealizadas() {
+        return ventasRealizadas;
+    }
+
 }
