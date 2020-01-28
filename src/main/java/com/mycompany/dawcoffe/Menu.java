@@ -49,8 +49,19 @@ public class Menu {
         System.out.println("208. Chocolate.");
         System.out.println("205. Leche Fria o Caliente.");
         System.out.println("-----------------------------------");
+        resp = teclado.nextInt();
     }
-
+    
+    public void saldoIntro (){
+        System.out.println("Deposite dinero para la compra.");
+        resp = teclado.nextInt();
+    }
+    
+    public void recargaSaldo(){
+        System.out.println("Porfavor deposite mas dinero.");
+        resp = teclado.nextInt();
+    }
+    
     public int getResp() {
         return resp;
     }

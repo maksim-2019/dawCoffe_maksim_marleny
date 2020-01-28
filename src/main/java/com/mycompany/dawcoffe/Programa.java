@@ -10,12 +10,22 @@ package com.mycompany.dawcoffe;
  * @author maksim
  */
 public class Programa {
+
     public static void main(String[] args) {
         Menu menu = new Menu();
-        do{
-            
+        Cafetera cafetera = new Cafetera();
+        do {
+
             menu.menuPrincipal();
-            
-        }while(menu.getResp() > 3 || menu.getResp() < 0);
+            if (menu.getResp() == 1) {
+                cafetera.saldoActu();
+                menu.menuVentas();
+                cafetera.ventaProductos(menu.getResp());
+            } else if (menu.getResp() == 2) {
+                menu.menuAdministracion();
+
+            }
+
+        } while (menu.getResp() > 3 || menu.getResp() < 0);
     }
 }
