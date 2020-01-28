@@ -52,6 +52,10 @@ public class Deposito {
     public int getCantidadActual() {
         return cantidadActual;
     }
+
+    public void setCantidadActual(int cantidadActual) {
+        this.cantidadActual = cantidadActual;
+    }
     
     
 }

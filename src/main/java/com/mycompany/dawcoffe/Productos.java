@@ -20,7 +20,7 @@ public enum Productos {
     CAFE_CORTADO(206, "Cafe cortado", 1, 25, 25, 25, 0),
     CAFE_CORTADO_DESCAFEINADO(207, "Cafe cortado descafeinado", 1, 25 ,25, 25, 0),
     CHOCOLATE(208, "Chocolate", 1.4, 0, 50, 0, 50),
-    LECHE_FRIA_CALIENTE(209, "Leche fria", 0.50, 0, 0, 100, 0);
+    LECHE_FRIA_CALIENTE(209, "Leche fria o caliente", 0.50, 0, 0, 100, 0);
     
     private int codigo;
     private String nombre;
