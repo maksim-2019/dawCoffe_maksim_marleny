@@ -19,7 +19,11 @@ public class Cafetera {
     Deposito agua = new Deposito("Agua", 1000);
     Deposito leche = new Deposito("Leche", 1000);
     Deposito chocolate = new Deposito("Chocolate", 1000);
-
+    Deposito azucar = new Deposito("Azucar", 1000);
+    public void ventaProductos(){
+        
+    }
+    
     public double getSaldo() {
         return saldo;
     }

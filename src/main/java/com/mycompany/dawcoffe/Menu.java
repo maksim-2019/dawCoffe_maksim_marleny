@@ -16,21 +16,39 @@ public class Menu {
     private int resp;
     private Scanner teclado = new Scanner(System.in);
 
-    public void MenuPrincipal() {
-
+    public void menuPrincipal() {
+        System.out.println("-----------------------------------");
         System.out.println("1. Comprar Cafe.");
         System.out.println("2. Administrar Cafetera.");
         System.out.println("3. Salir");
+        System.out.println("-----------------------------------");
         this.resp = teclado.nextInt();
     }
-    
-    public void MenuAdministracion(){
+
+    public void menuAdministracion() {
+        System.out.println("-----------------------------------");
         System.out.println("1. Comprobar Depositos.");
         System.out.println("2. Estado de Depositos.");
         System.out.println("3. Rellenar deposito.");
         System.out.println("4. Consultar Ventas.");
         System.out.println("5. Salir");
+        System.out.println("-----------------------------------");
         resp = teclado.nextInt();
+    }
+
+    public void menuVentas() {
+        System.out.println("-----------------------------------");
+        System.out.println("200. Cafe Solo.");
+        System.out.println("201. Cafe Solo Descafeinado.");
+        System.out.println("202. Cafe Largo.");
+        System.out.println("203. Cafe Largo Descafeinado.");
+        System.out.println("204. Cafe con Leche.");
+        System.out.println("205. Cafe con Leche Descafeinado.");
+        System.out.println("206. Cafe Cortado.");
+        System.out.println("207. Cafe Cortado Descafeinado.");
+        System.out.println("208. Chocolate.");
+        System.out.println("205. Leche Fria o Caliente.");
+        System.out.println("-----------------------------------");
     }
 
     public int getResp() {
@@ -40,6 +58,5 @@ public class Menu {
     public void setResp(int resp) {
         this.resp = resp;
     }
-    
-    
+
 }

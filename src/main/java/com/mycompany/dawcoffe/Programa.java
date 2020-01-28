@@ -14,7 +14,7 @@ public class Programa {
         Menu menu = new Menu();
         do{
             
-            menu.MenuPrincipal();
+            menu.menuPrincipal();
             
         }while(menu.getResp() > 3 || menu.getResp() < 0);
     }
