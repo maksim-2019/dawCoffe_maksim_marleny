@@ -10,5 +10,8 @@ package com.mycompany.dawcoffe;
  * @author mar
  */
 public class Deposito {
-    
+    public String nombre;
+    public int cantidadMax = 1000;
+    public int cantidadUmbral = 100;
+    public int cantidadActual;
 }
