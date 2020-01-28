@@ -10,8 +10,48 @@ package com.mycompany.dawcoffe;
  * @author mar
  */
 public class Deposito {
-    public String nombre;
-    public int cantidadMax = 1000;
-    public int cantidadUmbral = 100;
-    public int cantidadActual;
+    private String nombre;
+    private int cantidadMax = 1000;
+    private int cantidadUmbral = 100;
+    private int cantidadActual;
+
+    public Deposito(String nombre, int cantidadActual) {
+        this.nombre = nombre;
+        this.cantidadActual = cantidadActual;
+    }
+    
+    public void RellenarDeposito(){
+        this.cantidadActual = 1000;
+    }
+    
+    public void vaciarDeposito(){
+        this.cantidadActual = 0;
+    }
+    
+    public void mostrarDeposito () {
+        this.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Deposito{" + "nombre=" + nombre + ", cantidadMax=" + cantidadMax + ", cantidadUmbral=" + cantidadUmbral + ", cantidadActual=" + cantidadActual + '}';
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getCantidadMax() {
+        return cantidadMax;
+    }
+
+    public int getCantidadUmbral() {
+        return cantidadUmbral;
+    }
+
+    public int getCantidadActual() {
+        return cantidadActual;
+    }
+    
+    
 }
