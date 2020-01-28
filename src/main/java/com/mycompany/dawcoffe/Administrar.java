@@ -10,5 +10,6 @@ package com.mycompany.dawcoffe;
  * @author maksim
  */
 public class Administrar {
-    
+    private String usuario = "Admin";
+    private String contraseña = "Admin";
 }

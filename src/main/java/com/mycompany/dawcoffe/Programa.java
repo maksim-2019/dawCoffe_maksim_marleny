@@ -11,6 +11,11 @@ package com.mycompany.dawcoffe;
  */
 public class Programa {
     public static void main(String[] args) {
-        
+        Menu menu = new Menu();
+        do{
+            
+            menu.MenuPrincipal();
+            
+        }while(menu.getResp() > 3 || menu.getResp() < 0);
     }
 }

@@ -4,21 +4,33 @@
  * and open the template in the editor.
  */
 package com.mycompany.dawcoffe;
+
 import java.util.Scanner;
+
 /**
  *
  * @author maksim
  */
 public class Menu {
-    
-    Scanner teclado = new Scanner(System.in);
-    
-    public int MenuPrincipal() {
-        int resp;
+
+    private int resp;
+    private Scanner teclado = new Scanner(System.in);
+
+    public void MenuPrincipal() {
+
         System.out.println("1. Comprar Cafe.");
         System.out.println("2. Administrar Cafetera.");
         System.out.println("3. Salir");
-        resp = teclado.nextInt();
+        this.resp = teclado.nextInt();
+    }
+
+    public int getResp() {
         return resp;
     }
+
+    public void setResp(int resp) {
+        this.resp = resp;
+    }
+    
+    
 }
