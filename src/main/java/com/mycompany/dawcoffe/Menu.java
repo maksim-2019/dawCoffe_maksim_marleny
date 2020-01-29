@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Menu {
 
     private int resp;
+    private double respD;
     private Scanner teclado = new Scanner(System.in);
 
     public void menuPrincipal() {
@@ -54,12 +55,12 @@ public class Menu {
     
     public void saldoIntro (){
         System.out.println("Deposite dinero para la compra.");
-        resp = teclado.nextInt();
+        respD = teclado.nextDouble();
     }
     
     public void recargaSaldo(){
         System.out.println("Porfavor deposite mas dinero.");
-        resp = teclado.nextInt();
+        respD = teclado.nextDouble();
     }
     
     public int getResp() {
@@ -68,6 +69,14 @@ public class Menu {
 
     public void setResp(int resp) {
         this.resp = resp;
+    }
+
+    public double getRespD() {
+        return respD;
+    }
+
+    public void setRespD(double respD) {
+        this.respD = respD;
     }
 
 }
