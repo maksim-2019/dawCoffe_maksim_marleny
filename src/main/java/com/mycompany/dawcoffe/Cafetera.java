@@ -33,72 +33,30 @@ public class Cafetera {
 //            saldo -= Productos.CAFE_SOLO.getPrecio();
 //            saldoAcumulado += Productos.CAFE_SOLO.getPrecio();
 //            ventasRealizadas++;
-              this.ventaD(0);
+            this.ventaD(0);
         } else if (aux == 202 || aux == 203) {
-            while (saldo < Productos.CAFE_LARGO.getPrecio()) {
-                menu.recargaSaldo();
-                saldo += menu.getRespD();
-            };
-            cafe.setCantidadActual(cafe.getCantidadActual() - Productos.CAFE_LARGO.getCafe());
-            agua.setCantidadActual(agua.getCantidadActual() - Productos.CAFE_LARGO.getAgua());
-            saldo -= Productos.CAFE_LARGO.getPrecio();
-            ventasRealizadas++;
-            saldoAcumulado += Productos.CAFE_LARGO.getPrecio();
+
+            this.ventaD(1);
 
         } else if (aux == 204 || aux == 205) {
-            while (saldo < Productos.CAFE_CON_LECHE.getPrecio()) {
-                menu.recargaSaldo();
-                saldo += menu.getRespD();
-            };
-            cafe.setCantidadActual(cafe.getCantidadActual() - Productos.CAFE_CON_LECHE.getCafe());
-            leche.setCantidadActual(leche.getCantidadActual() - Productos.CAFE_CON_LECHE.getLeche());
-            saldo -= Productos.CAFE_CON_LECHE.getPrecio();
-            saldoAcumulado += Productos.CAFE_CON_LECHE.getPrecio();
-            ventasRealizadas++;
+
+            this.ventaD(2);
 
         } else if (aux == 206 || aux == 207) {
-            while (saldo < Productos.CAFE_CORTADO.getPrecio()) {
-                menu.recargaSaldo();
-                saldo += menu.getRespD();
-            };
-            cafe.setCantidadActual(cafe.getCantidadActual() - Productos.CAFE_CORTADO.getCafe());
-            agua.setCantidadActual(agua.getCantidadActual() - Productos.CAFE_CORTADO.getAgua());
-            leche.setCantidadActual(leche.getCantidadActual() - Productos.CAFE_CORTADO.getLeche());
-            saldo -= Productos.CAFE_CORTADO.getPrecio();
-            saldoAcumulado += Productos.CAFE_CORTADO.getPrecio();
-            ventasRealizadas++;
+
+            this.ventaD(3);
 
         } else if (aux == 208) {
-            while (saldo < Productos.CHOCOLATE.getPrecio()) {
-                menu.recargaSaldo();
-                saldo += menu.getRespD();
-            };
-            leche.setCantidadActual(leche.getCantidadActual() - Productos.CHOCOLATE.getLeche());
-            chocolate.setCantidadActual(chocolate.getCantidadActual() - Productos.CHOCOLATE.getChocolate());
-            saldo -= Productos.CHOCOLATE.getPrecio();
-            saldoAcumulado += Productos.CHOCOLATE.getPrecio();
-            ventasRealizadas++;
-        } else if (aux == 209) {
-<<<<<<< Updated upstream
-            while (saldo < Productos.LECHE_FRIA_CALIENTE.getPrecio()) {
-=======
-            leche.setCantidadActual(leche.getCantidadActual() - Productos.LECHE_FRIA_CALIENTE.getLeche());
-            if (saldo > Productos.LECHE_FRIA_CALIENTE.getPrecio()) {
-                saldo -= Productos.LECHE_FRIA_CALIENTE.getPrecio();
-                ventasRealizadas++;
-            } else {
->>>>>>> Stashed changes
-                menu.recargaSaldo();
-                saldo += menu.getRespD();
-            };
-            leche.setCantidadActual(leche.getCantidadActual() - Productos.LECHE_FRIA_CALIENTE.getLeche());
-            saldo -= Productos.LECHE_FRIA_CALIENTE.getPrecio();
-            saldoAcumulado += Productos.LECHE_FRIA_CALIENTE.getPrecio();
-            ventasRealizadas++;
-        }
 
+            this.ventaD(4);
+
+        } else if (aux == 209) {
+
+            this.ventaD(5);
+
+        }
     }
-    }
+
     public void ventaD(int i) {
         Productos[] arrayP = {Productos.CAFE_SOLO, Productos.CAFE_LARGO, Productos.CAFE_CON_LECHE, Productos.CAFE_CORTADO, Productos.CHOCOLATE, Productos.LECHE_FRIA_CALIENTE};
         while (saldo < arrayP[i].getPrecio()) {
