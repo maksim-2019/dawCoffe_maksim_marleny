@@ -18,21 +18,25 @@ public class Programa {
         do {
 
             menu.menuPrincipal();
-            if (menu.getResp() == 1) {
+            if (menu.getResp2() == 1) {
                 cafetera.saldoActu();
                 menu.menuVentas();
                 cafetera.ventaProductos(menu.getResp());
-                System.out.println("Saldo actual: " + String.format("%.2f", cafetera.getSaldo()));
-                System.out.println("Saldo acumulado: " + String.format("%.2f", cafetera.getSaldoAcumulado()));
-            } else if (menu.getResp() == 2) {
+                System.out.println("Saldo restante: " + String.format("%.2f", cafetera.getSaldo()));
+                //System.out.println("Saldo acumulado: " + String.format("%.2f", cafetera.getSaldoAcumulado()));
+                System.out.println("Gracias por la compra.");
+            } else if (menu.getResp2() == 2) {
                 do{
                 menu.usuario();
                 admin.comprUsuario(menu.getUsuario(), menu.getContraseña());
                 }while(admin.comprUsuario(menu.getUsuario(), menu.getContraseña()) == false);
                 menu.menuAdministracion();
-
+                if (menu.getResp() == 1){
+                    cafetera.comprovarDeposito();
+                    menu.setResp(0);
+                }
             }
 
-        } while (menu.getResp() > 3 || menu.getResp() < 0);
+        } while (menu.getResp2() != 3);
     }
 }

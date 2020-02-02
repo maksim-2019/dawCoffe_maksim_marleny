@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Menu {
 
     private int resp;
+    private int resp2;
     private double respD;
     private String usuario;
     private String contraseña;
@@ -25,7 +26,7 @@ public class Menu {
         System.out.println("2. Administrar Cafetera.");
         System.out.println("3. Salir");
         System.out.println("-----------------------------------");
-        this.resp = teclado.nextInt();
+        this.resp2 = teclado.nextInt();
     }
 
     public void menuAdministracion() {
@@ -82,6 +83,7 @@ public class Menu {
         contraseña = teclado.next();
     }
     
+    
     public int getResp() {
         return resp;
     }
@@ -104,6 +106,14 @@ public class Menu {
 
     public String getContraseña() {
         return contraseña;
+    }
+
+    public int getResp2() {
+        return resp2;
+    }
+
+    public void setResp2(int resp2) {
+        this.resp2 = resp2;
     }
 
 }

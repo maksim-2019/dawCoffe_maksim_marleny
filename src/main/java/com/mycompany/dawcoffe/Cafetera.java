@@ -77,6 +77,13 @@ public class Cafetera {
         saldoAcumulado += arrayP[i].getPrecio();
         ventasRealizadas++;
     }
+    
+    public void comprovarDeposito(){
+        Deposito[] arrayD = {cafe, agua,leche,chocolate,azucar};
+        for(int i = 0; i < arrayD.length; i++){
+            System.out.println("El deposito de "+ arrayD[i].getNombre() + " tiene: "+ arrayD[i].getCantidadActual());
+        }
+    }
 
     public void saldoActu() {
         menu.saldoIntro();
