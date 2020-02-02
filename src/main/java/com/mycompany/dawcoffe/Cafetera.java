@@ -79,7 +79,15 @@ public class Cafetera {
             saldoAcumulado += Productos.CHOCOLATE.getPrecio();
             ventasRealizadas++;
         } else if (aux == 209) {
+<<<<<<< Updated upstream
             while (saldo < Productos.LECHE_FRIA_CALIENTE.getPrecio()) {
+=======
+            leche.setCantidadActual(leche.getCantidadActual() - Productos.LECHE_FRIA_CALIENTE.getLeche());
+            if (saldo > Productos.LECHE_FRIA_CALIENTE.getPrecio()) {
+                saldo -= Productos.LECHE_FRIA_CALIENTE.getPrecio();
+                ventasRealizadas++;
+            } else {
+>>>>>>> Stashed changes
                 menu.recargaSaldo();
                 saldo += menu.getRespD();
             };
@@ -90,7 +98,7 @@ public class Cafetera {
         }
 
     }
-
+    }
     public void ventaD(int i) {
         Productos[] arrayP = {Productos.CAFE_SOLO, Productos.CAFE_LARGO, Productos.CAFE_CON_LECHE, Productos.CAFE_CORTADO, Productos.CHOCOLATE, Productos.LECHE_FRIA_CALIENTE};
         while (saldo < arrayP[i].getPrecio()) {
