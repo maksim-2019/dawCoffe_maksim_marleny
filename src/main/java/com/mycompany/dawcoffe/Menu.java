@@ -15,6 +15,8 @@ public class Menu {
 
     private int resp;
     private double respD;
+    private String usuario;
+    private String contraseña;
     private Scanner teclado = new Scanner(System.in);
 
     public void menuPrincipal() {
@@ -59,6 +61,7 @@ public class Menu {
         System.out.println("1. Nada de Azucar");
         System.out.println("2. Poco Azucar");
         System.out.println("3. Mucho Azucar");
+        System.out.println("-----------------------------------");
         resp = teclado.nextInt();
     }
     public void saldoIntro (){
@@ -67,8 +70,16 @@ public class Menu {
     }
     
     public void recargaSaldo(){
-        System.out.println("Porfavor deposite mas dinero.");
+        System.out.println("Por favor deposite mas dinero.");
         respD = teclado.nextDouble();
+    }
+    
+    public void usuario(){
+        System.out.println("-----------------------------------");
+        System.out.println("Introduzca un usuario: ");
+        usuario = teclado.nextLine();
+        System.out.println("Introduzca una contraseña: ");
+        contraseña = teclado.nextLine();
     }
     
     public int getResp() {

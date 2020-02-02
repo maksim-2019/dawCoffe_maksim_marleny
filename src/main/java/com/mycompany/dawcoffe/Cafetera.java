@@ -68,9 +68,9 @@ public class Cafetera {
         chocolate.setCantidadActual(chocolate.getCantidadActual() - arrayP[i].getChocolate());
         leche.setCantidadActual(leche.getCantidadActual() - arrayP[i].getLeche());
         menu.menuAzucar();
-        if (menu.getResp() == 3){
+        if (menu.getResp() == 3) {
             azucar.setCantidadActual(azucar.getCantidadActual() - 40);
-        } else if (menu.getResp() == 2){
+        } else if (menu.getResp() == 2) {
             azucar.setCantidadActual(azucar.getCantidadActual() - 20);
         }
         saldo -= arrayP[i].getPrecio();

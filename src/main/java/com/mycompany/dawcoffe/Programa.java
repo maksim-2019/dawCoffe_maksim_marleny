@@ -21,8 +21,8 @@ public class Programa {
                 cafetera.saldoActu();
                 menu.menuVentas();
                 cafetera.ventaProductos(menu.getResp());
-                System.out.println("Saldo actual: "+cafetera.getSaldo());
-                System.out.println("Saldo acumulado: "+cafetera.getSaldoAcumulado());
+                System.out.println("Saldo actual: " + String.format("%.2f", cafetera.getSaldo()));
+                System.out.println("Saldo acumulado: " + String.format("%.2f", cafetera.getSaldoAcumulado()));
             } else if (menu.getResp() == 2) {
                 menu.menuAdministracion();
 
