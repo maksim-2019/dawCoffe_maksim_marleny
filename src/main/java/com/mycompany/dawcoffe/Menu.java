@@ -53,6 +53,14 @@ public class Menu {
         resp = teclado.nextInt();
     }
     
+    public void menuAzucar(){
+        System.out.println("-----------------------------------");
+        System.out.println("¿ Cuanto azucar quieres ?");
+        System.out.println("1. Nada de Azucar");
+        System.out.println("2. Poco Azucar");
+        System.out.println("3. Mucho Azucar");
+        resp = teclado.nextInt();
+    }
     public void saldoIntro (){
         System.out.println("Deposite dinero para la compra.");
         respD = teclado.nextDouble();

@@ -67,6 +67,12 @@ public class Cafetera {
         agua.setCantidadActual(cafe.getCantidadActual() - arrayP[i].getAgua());
         chocolate.setCantidadActual(chocolate.getCantidadActual() - arrayP[i].getChocolate());
         leche.setCantidadActual(leche.getCantidadActual() - arrayP[i].getLeche());
+        menu.menuAzucar();
+        if (menu.getResp() == 3){
+            azucar.setCantidadActual(azucar.getCantidadActual() - 40);
+        } else if (menu.getResp() == 2){
+            azucar.setCantidadActual(azucar.getCantidadActual() - 20);
+        }
         saldo -= arrayP[i].getPrecio();
         saldoAcumulado += arrayP[i].getPrecio();
         ventasRealizadas++;
