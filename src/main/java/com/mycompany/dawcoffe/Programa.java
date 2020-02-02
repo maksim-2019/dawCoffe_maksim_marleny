@@ -33,7 +33,9 @@ public class Programa {
                 menu.menuAdministracion();
                 if (menu.getResp() == 1){
                     cafetera.comprovarDeposito();
-                    menu.setResp(0);
+                   
+                } else if (menu.getResp() == 2){
+                    cafetera.estadoDeposito();
                 }
             }
 

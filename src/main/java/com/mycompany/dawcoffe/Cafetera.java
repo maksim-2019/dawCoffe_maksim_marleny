@@ -84,6 +84,13 @@ public class Cafetera {
             System.out.println("El deposito de "+ arrayD[i].getNombre() + " tiene: "+ arrayD[i].getCantidadActual());
         }
     }
+    
+    public void estadoDeposito(){
+        Deposito[] arrayD = {cafe, agua,leche,chocolate,azucar};
+        for (Deposito deposito : arrayD) {
+            System.out.println(deposito);
+        }
+    }
 
     public void saldoActu() {
         menu.saldoIntro();
