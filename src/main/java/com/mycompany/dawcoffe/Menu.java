@@ -77,9 +77,9 @@ public class Menu {
     public void usuario(){
         System.out.println("-----------------------------------");
         System.out.println("Introduzca un usuario: ");
-        usuario = teclado.nextLine();
+        usuario = teclado.next();
         System.out.println("Introduzca una contraseña: ");
-        contraseña = teclado.nextLine();
+        contraseña = teclado.next();
     }
     
     public int getResp() {
@@ -96,6 +96,14 @@ public class Menu {
 
     public void setRespD(double respD) {
         this.respD = respD;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public String getContraseña() {
+        return contraseña;
     }
 
 }

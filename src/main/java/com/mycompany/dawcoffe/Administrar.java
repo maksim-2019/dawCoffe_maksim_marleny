@@ -14,13 +14,25 @@ public class Administrar {
     private String usuario = "Admin";
     private String contraseña = "Admin";
 
-    public void comprUsuario(String usuar, String contra) {
+    public boolean comprUsuario(String usuar, String contra) {
         
         if(usuar.equals(usuario) && contra.equals(contraseña)){
             System.out.println("Credenciales corectas");
+            return true;
         } else {
             System.out.println("Credenciales erroneas");
+            return false;
         }
         
     }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+    
+    
 }
