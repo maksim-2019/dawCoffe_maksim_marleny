@@ -54,7 +54,12 @@ public class Deposito {
     }
 
     public void setCantidadActual(int cantidadActual) {
-        this.cantidadActual = cantidadActual;
+        if (cantidadActual > 1000){
+            this.cantidadActual = 1000;
+        } else {
+            this.cantidadActual = cantidadActual;
+        }
+        
     }
     
     

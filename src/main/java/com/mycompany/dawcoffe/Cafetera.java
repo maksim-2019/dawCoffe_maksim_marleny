@@ -91,6 +91,19 @@ public class Cafetera {
             System.out.println(deposito);
         }
     }
+    public void rellenarDeposTodo( int aux){
+        Deposito[] arrayD = {cafe, agua,leche,chocolate,azucar};
+        arrayD[aux].RellenarDeposito();
+    }
+    public void rellenarDepos(int aux, int aux2){
+        Deposito[] arrayD = {cafe, agua,leche,chocolate,azucar};
+        arrayD[aux].setCantidadActual(aux2);
+    }
+    
+    public void ventasReali(){
+        System.out.println("Se han vendido : "+ventasRealizadas+ " productos");
+        System.out.println("Se a ganado : " + saldoAcumulado + " € en esta sesion");
+    }
 
     public void saldoActu() {
         menu.saldoIntro();

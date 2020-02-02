@@ -15,6 +15,7 @@ public class Menu {
 
     private int resp;
     private int resp2;
+    private int resp3;
     private double respD;
     private String usuario;
     private String contraseña;
@@ -83,9 +84,37 @@ public class Menu {
         contraseña = teclado.next();
     }
     
+    public void depositosR(){
+        System.out.println("-----------------------------------");
+        System.out.println("1. Cafe");
+        System.out.println("2. Agua");
+        System.out.println("3. Leche");
+        System.out.println("4. Chocolate");
+        System.out.println("5. Azucar");
+        System.out.println("6. Salir");
+        System.out.println("-----------------------------------");
+        resp = teclado.nextInt();
+    }
     
+    public void deposIndividual(){
+        System.out.println("-----------------------------------");
+        System.out.println("1. Rellenar todo.");
+        System.out.println("2. Rellenar parte.");
+        System.out.println("3. Salir");
+        System.out.println("-----------------------------------");
+        resp2 = teclado.nextInt();
+    }
+    public void rellenarDepo(){
+        System.out.println("-----------------------------------");
+        System.out.println("¿Cuanto quiere rellenar el deposito ?");
+        resp3 = teclado.nextInt();
+    }
     public int getResp() {
         return resp;
+    }
+
+    public int getResp3() {
+        return resp3;
     }
 
     public void setResp(int resp) {
